@@ -19,17 +19,34 @@
 }
 
 .container {
-  padding-inline: 2rem;
+  padding-inline: 2em;
   max-width: 80rem;
   margin-inline: auto;
 }
 
 .grid-container {
+  text-align: center;
+  border: 5px solid limegreen;
   display: grid;
+  place-items: center;
+  padding-inline: 1rem;
 }
 
-@media (min-width: 45em) {
+.grid-container * {
+  max-width: 50ch;
+}
+
+.grid-container > *:first-child {
+  outline: 1px solid red;
+}
+
+.grid-container > *:last-child {
+  outline: 1px solid yellow;
+}
+
+@media (min-width: 48em) {
   .grid-container {
+    text-align: left;
     column-gap: var(--container-gap, 2rem);
     grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
         2rem,
@@ -47,7 +64,6 @@
     outline: 1px solid yellow;
   }
 }
-
 /*------Screen readers classes -------      */
 .sr-only {
   position: absolute;
@@ -215,6 +231,7 @@
 /* ------------------- */
 
 .large-button {
+  font-size: 2rem;
   position: relative;
   z-index: 1;
   display: inline-grid;
