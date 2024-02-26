@@ -72,6 +72,20 @@
   padding-top: 2.5rem;
   margin-top: 2.5rem;
 }
+.destination-meta p {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 35em) {
+  .numbered-title {
+    justify-self: start;
+    margin-top: 2rem;
+  }
+  .destination-meta {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 
 @media (min-width: 45em) {
   .grid-container {
@@ -88,12 +102,29 @@
     align-items: end;
   }
 
-  .grid-container > *:first-child {
+  .grid-container--home > *:first-child {
     grid-column: 2;
   }
 
-  .grid-container > *:last-child {
+  .grid-container--home > *:last-child {
     grid-column: 3;
+  }
+
+  .grid-container--destination {
+    justify-items: start;
+    align-items: start;
+    grid-template-areas:
+      ". title title ."
+      ". image tabs ."
+      ". image content .";
+  }
+
+  .grid-container--destination > img {
+    max-width: 90%;
+  }
+  .destination-meta {
+    --gap: 6rem;
+    justify-content: start;
   }
 }
 /*------Screen readers classes -------      */
