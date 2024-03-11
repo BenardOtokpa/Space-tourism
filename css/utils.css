@@ -154,7 +154,7 @@
   border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
 }
 
-.grid-container--crew > .dot-list {
+.grid-container--crew > .dot-indicators {
   grid-area: tabs;
 }
 
@@ -163,6 +163,7 @@
 }
 @media (min-width: 35em) {
   .grid-container--crew {
+    padding-bottom: 0;
     grid-template-areas:
       "title"
       "content"
@@ -176,6 +177,12 @@
       ". title title ."
       ". content image ."
       ". tabs image .";
+  }
+  .grid-container--crew > img {
+    max-width: 90%;
+  }
+  .grid-container--crew > .dot-indicators {
+    justify-self: start;
   }
 }
 
