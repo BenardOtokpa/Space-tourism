@@ -17,6 +17,9 @@
 .d-block {
   display: block;
 }
+.flow--space-small {
+  --flow-space: 0.5rem;
+}
 
 .container {
   padding-inline: 2em;
@@ -161,6 +164,10 @@
 .grid-container--crew > .crew-details {
   grid-area: content;
 }
+.crew-details h2 {
+  color: hsl(var(--clr-white) / 0.5);
+}
+
 @media (min-width: 35em) {
   .grid-container--crew {
     padding-bottom: 0;
