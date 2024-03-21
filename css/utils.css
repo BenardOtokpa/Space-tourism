@@ -61,11 +61,7 @@
 
 .grid-container--destination > picture {
   grid-area: image;
-  /* max-width: 0%; */
 }
-/* picture > img {
-  max-width: 60%;
-} */
 
 .grid-container--destination > .tab-list {
   grid-area: tabs;
@@ -353,3 +349,7 @@
 .fs-600 {
   line-height: 1.1;
 }
+
+/* [role="tabpanel"] {
+  color: aquamarine;
+} */
