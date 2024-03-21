@@ -26,7 +26,7 @@
     <script src="./javascript/tabs.js" defer></script>
   </head>
 
-  <body class="crew">
+  <body class="technology">
     <a class="skip-to-content" href="#main">Skip to content</a>
     <header class="primary-header flex">
       <div>
@@ -59,14 +59,14 @@
               ><span aria-hidden="true">01</span>Destination</a
             >
           </li>
-          <li class="active">
+          <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="crew.html"
               ><span aria-hidden="true">02</span>Crew</a
             >
           </li>
-          <li>
+          <li class="active">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="technology.html"
@@ -89,34 +89,34 @@
       >
         <button
           aria-selected="true"
-          aria-controls="commander-tab"
+          aria-controls="Launch-vehicle-tab"
           role="tab"
-          data-image="commander-image"
+          data-image="launch-vehicle-image"
           tabindex="0"
         >
           <span class="sr-only">Launch Vehicle</span>
         </button>
         <button
           aria-selected="false"
-          aria-controls="mission-tab"
+          aria-controls="space-port-tab"
           role="tab"
-          data-image="mission-image"
+          data-image="space-port-image"
           tabindex="-1"
         >
           <span class="sr-only">Space port</span>
         </button>
         <button
           aria-selected="false"
-          aria-controls="pilot-tab"
+          aria-controls="space-capsule-tab"
           role="tab"
-          data-image="pilot-image"
+          data-image="space-capsule-image"
           tabindex="-1"
         >
           <span class="sr-only">Space Capsule</span>
         </button>
       </div>
 
-      <!-- commander -->
+      <!-- Launch vehicle -->
       <article
         class="crew-details flow"
         id="commander-tab"
@@ -124,17 +124,19 @@
         tabindex="0"
       >
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">Commander</h2>
-          <p class="fs-700 uppercase ff-serif">Douglas Hurley</p>
+          <h2 class="fs-600 ff-serif uppercase">The Terminology…</h2>
+          <p class="fs-700 uppercase ff-serif">Launch Vehicle</p>
         </header>
         <p>
-          Douglas Gerald Hurley is an American engineer, former Marine Corps
-          pilot and former NASA astronaut. He launched into space for the third
-          time as commander of Crew Dragon Demo-2.
+          A launch vehicle or carrier rocket is a rocket-propelled vehicle used
+          to carry a payload from Earth's surface to space, usually to Earth
+          orbit or beyond. Our WEB-X carrier rocket is the most powerful in
+          operation. Standing 150 metres tall, it's quite an awe-inspiring sight
+          on the launch pad!
         </p>
       </article>
 
-      <!-- mission specialist -->
+      <!-- space port -->
       <article
         hidden
         class="crew-details flow"
@@ -143,17 +145,18 @@
         tabindex="0"
       >
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">Mission Specialist</h2>
-          <p class="fs-700 uppercase ff-serif">Mark SHuttleworth</p>
+          <h2 class="fs-600 ff-serif uppercase">The Terminology…</h2>
+          <p class="fs-700 uppercase ff-serif">Spaceport</p>
         </header>
         <p>
-          Mark Richard Shuttleworth is the founder and CEO of Canonical, the
-          company behind the Linux-based Ubuntu operating system. Shuttleworth
-          became the first South African to travel to space as a space tourist.
+          A spaceport or cosmodrome is a site for launching (or receiving)
+          spacecraft, by analogy to the seaport for ships or airport for
+          aircraft. Based in the famous Cape Canaveral, our spaceport is ideally
+          situated to take advantage of the Earth’s rotation for launch.
         </p>
       </article>
 
-      <!-- pilot -->
+      <!-- space capsule -->
       <article
         hidden
         class="crew-details flow"
@@ -162,38 +165,19 @@
         tabindex="0"
       >
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">Pilot</h2>
-          <p class="fs-700 uppercase ff-serif">Victor Glover</p>
+          <h2 class="fs-600 ff-serif uppercase">The Terminology…</h2>
+          <p class="fs-700 uppercase ff-serif">Space Capsule</p>
         </header>
         <p>
-          Pilot on the first operational flight of the SpaceX Crew Dragon to the
-          International Space Station. Glover is a commander in the U.S. Navy
-          where he pilots an F/A-18.He was a crew member of Expedition 64, and
-          served as a station systems flight engineer.
+          A space capsule is an often-crewed spacecraft that uses a blunt-body
+          reentry capsule to reenter the Earth's atmosphere without wings. Our
+          capsule is where you'll spend your time during the flight. It includes
+          a space gym, cinema, and plenty of other activities to keep you
+          entertained.
         </p>
       </article>
 
-      <!-- engineer -->
-      <article
-        hidden
-        class="crew-details flow"
-        id="crew-tab"
-        role="tabpanel"
-        tabindex="0"
-      >
-        <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">Flight Engineer</h2>
-          <p class="fs-700 uppercase ff-serif">Anousheh Ansari</p>
-        </header>
-        <p>
-          Anousheh Ansari is an Iranian American engineer and co-founder of
-          Prodea Systems. Ansari was the fourth self-funded space tourist, the
-          first self-funded woman to fly to the ISS, and the first Iranian in
-          space.
-        </p>
-      </article>
-
-      <picture id="rocket-image">
+      <picture id="launch-vehicle-image">
         <source
           srcset="assets/technology/image-launch-vehicle-portrait.jpg"
           type="image/webp"
@@ -201,16 +185,6 @@
         <img
           src="assets/technology/image-launch-vehicle-portrait.jpg"
           alt="image-launch-vehicle-portrait"
-        />
-      </picture>
-      <picture hidden id="space-capsule-image">
-        <source
-          srcset="assets/technology/image-space-capsule-portrait.jpg"
-          type="image/webp"
-        />
-        <img
-          src="assets/technology/image-space-capsule-portrait.jpg"
-          alt="image-space-capsule-portrait"
         />
       </picture>
       <picture hidden id="space-port-image">
@@ -221,6 +195,16 @@
         <img
           src="assets/technology/image-spaceport-portrait.jpg"
           alt="image-spaceport-portrait"
+        />
+      </picture>
+      <picture hidden id="space-capsule-image">
+        <source
+          srcset="assets/technology/image-space-capsule-portrait.jpg"
+          type="image/webp"
+        />
+        <img
+          src="assets/technology/image-space-capsule-portrait.jpg"
+          alt="image-space-capsule-portrait"
         />
       </picture>
     </main>

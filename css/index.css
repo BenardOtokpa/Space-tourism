@@ -136,19 +136,19 @@ body {
   }
 }
 /* Teschnology */
-.crew {
+.technology {
   background-image: url(../assets/technology/background-technology-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
-  .crew {
+  .technology {
     background-position: center center;
     background-image: url(../assets/technology/background-technology-tablet.jpg);
   }
 }
 
 @media (min-width: 45rem) {
-  .crew {
+  .technology {
     background-image: url(../assets/technology/background-technology-desktop.jpg);
   }
 }
