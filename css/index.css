@@ -351,3 +351,23 @@ body {
 .dot-indicators > [aria-selected="true"] {
   background-color: hsl(var(--clr-white) / 1);
 }
+
+.number-indicators > * {
+  cursor: pointer;
+  color: hsl(var(--clr-white) / 0.25);
+  border: 1px solid hsl(var(--clr-white) / 0.25);
+  width: 80px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.number-indicators > *:hover {
+  color: hsl(var(--clr-white) / 0.5);
+  border: 1px solid hsl(var(--clr-white) / 0.5);
+}
+
+.number-indicators > [aria-selected="true"] {
+  color: black;
+  background-color: hsl(var(--clr-white) / 1);
+}
