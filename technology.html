@@ -121,13 +121,15 @@
 
       <!-- Launch vehicle -->
       <article
-        class="crew-details flow"
-        id="commander-tab"
+        class="tech-details flow"
+        id="Launch-vehicle-tab"
         role="tabpanel"
         tabindex="0"
       >
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">The Terminology…</h2>
+          <h2 class="text-accent fs-400 ff-serif uppercase">
+            The Terminology…
+          </h2>
           <p class="fs-700 uppercase ff-serif">Launch Vehicle</p>
         </header>
         <p>
@@ -142,13 +144,15 @@
       <!-- space port -->
       <article
         hidden
-        class="crew-details flow"
-        id="mission-tab"
+        class="tech-details flow"
+        id="space-port-tab"
         role="tabpanel"
         tabindex="0"
       >
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">The Terminology…</h2>
+          <h2 class="text-accent fs-400 ff-serif uppercase">
+            The Terminology…
+          </h2>
           <p class="fs-700 uppercase ff-serif">Spaceport</p>
         </header>
         <p>
@@ -162,13 +166,15 @@
       <!-- space capsule -->
       <article
         hidden
-        class="crew-details flow"
-        id="pilot-tab"
+        class="tech-details flow"
+        id="space-capsule-tab"
         role="tabpanel"
         tabindex="0"
       >
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">The Terminology…</h2>
+          <h2 class="text-accent fs-400 ff-serif uppercase">
+            The Terminology…
+          </h2>
           <p class="fs-700 uppercase ff-serif">Space Capsule</p>
         </header>
         <p>
@@ -181,36 +187,73 @@
       </article>
 
       <!-- pictures -->
-      <picture id="launch-vehicle-image">
-        <source
-          srcset="assets/technology/image-launch-vehicle-landscape.jpg"
-          type="image/webp"
-        />
-        <img
-          src="assets/technology/image-launch-vehicle-landscape.jpg"
-          alt="image-launch-vehicle-portrait"
-        />
-      </picture>
-      <picture hidden id="space-port-image">
-        <source
-          srcset="assets/technology/image-spaceport-portrait.jpg"
-          type="image/webp"
-        />
-        <img
-          src="assets/technology/image-spaceport-portrait.jpg"
-          alt="image-spaceport-portrait"
-        />
-      </picture>
-      <picture hidden id="space-capsule-image">
-        <source
-          srcset="assets/technology/image-space-capsule-portrait.jpg"
-          type="image/webp"
-        />
-        <img
-          src="assets/technology/image-space-capsule-portrait.jpg"
-          alt="image-space-capsule-portrait"
-        />
-      </picture>
+      <div class="mobile-images">
+        <!-- mobile images -->
+        <picture id="launch-vehicle-image">
+          <source
+            srcset="assets/technology/image-launch-vehicle-landscape.jpg"
+            type="image/webp"
+          />
+          <img
+            src="assets/technology/image-launch-vehicle-landscape.jpg"
+            alt="image-launch-vehicle-landscape"
+          />
+        </picture>
+        <picture hidden id="space-port-image">
+          <source
+            srcset="./assets/technology/image-spaceport-landscape.jpg"
+            type="image/webp"
+          />
+          <img
+            src="./assets/technology/image-spaceport-landscape.jpg"
+            alt="image-spaceport-portrait"
+          />
+        </picture>
+        <picture hidden id="space-capsule-image">
+          <source
+            srcset="assets/technology/image-space-capsule-landscape.jpg"
+            type="image/webp"
+          />
+          <img
+            src="assets/technology/image-space-capsule-landscape.jpg"
+            alt="image-space-capsule-portrait"
+          />
+        </picture>
+      </div>
+
+      <!-- desktop images -->
+      <div class="desktop-images">
+        <picture id="launch-vehicle-image">
+          <source
+            srcset="./assets/technology/image-launch-vehicle-portrait.jpg"
+            type="image/webp"
+          />
+          <img
+            src="./assets/technology/image-launch-vehicle-portrait.jpg"
+            alt="image-launch-vehicle-landscape"
+          />
+        </picture>
+        <picture hidden id="space-port-image">
+          <source
+            srcset="./assets/technology/image-spaceport-portrait.jpg"
+            type="image/webp"
+          />
+          <img
+            src="./assets/technology/image-spaceport-portrait.jpg"
+            alt="image-spaceport-portrait"
+          />
+        </picture>
+        <picture hidden id="space-capsule-image">
+          <source
+            srcset="./assets/technology/image-space-capsule-portrait.jpg"
+            type="image/webp"
+          />
+          <img
+            src="./assets/technology/image-space-capsule-portrait.jpg"
+            alt="image-space-capsule-portrait"
+          />
+        </picture>
+      </div>
     </main>
   </body>
 </html>
