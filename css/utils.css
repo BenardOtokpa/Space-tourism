@@ -231,9 +231,6 @@
 .desktop-images {
   display: none;
 }
-/* .tech-details h2 {
-  color: hsl(var(--clr-white) / 0.5);
-} */
 
 @media (min-width: 35em) {
   .grid-container--technology {
